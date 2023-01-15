@@ -82,9 +82,7 @@
     width: 200px;
   }
   /*============= MAIN CONTENT =============== */
-/* .container{
-   background-color: #181414;
-} */
+
 @keyframes unlock {
     0% {
       left: 100px;
@@ -143,3 +141,120 @@
     width: fit-content;
   }
   
+  /* =====MEDIA QUERIES ================ */
+  /* for large tablets */
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+    /*=== NAVBAR === */
+    .navbar-nav :not(:first-child):not(:last-child) {
+      display: none;
+      
+    }
+  
+    .navbar-toggler-btn{
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 10px;
+    }
+    .left-items {
+      flex-grow: 0;
+      margin-left: 10px;
+    }
+    .left-items a:last-of-type {
+      margin-bottom: 10px;
+    }
+  
+    .right-items {
+      margin-left: 15px;
+    }
+    .right-items button:first-of-type {
+      margin-top: 10px;
+    }
+    .right-items button:last-of-type {
+      margin-bottom: 10px;
+    }
+    .nav-link,
+    .btn-link {
+      display: block;
+    }
+    
+    
+    
+  }
+  
+  /* for smaller tablets*/
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .notice-header{
+      font-size: 1.5em;;
+    } 
+    .img-container{
+      margin-top: 3%;
+    }
+   
+    /*=== NAVBAR === */
+  .navbar-nav :not(:first-child):not(:last-child) {
+    display: none;
+   
+  }
+
+.navbar-toggler-btn{
+    display: block;
+  
+  }
+  .left-items {
+    flex-grow: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .right-items {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  .left-items a:last-of-type {
+    margin-bottom: 10px;
+  }
+  /* .btn-link {
+    margin-left: 15px;
+  } */
+  .nav-link,
+  .btn-link {
+    display: block;
+  }
+  }
+  
+  /* for cellphones */
+  @media only screen and (max-width: 480px) {
+    /*===========NAVBAR===============*/
+    .navbar-nav :not(:first-child):not(:last-child) {
+      display: none;
+     
+    }
+  
+  .navbar-toggler-btn{
+      display: block;
+    
+    }
+    .left-items {
+      flex-grow: 0;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+    .left-items a:last-of-type {
+      margin-bottom: 10px;
+    }
+    .right-items {
+      margin-left: 15px;
+    }
+    .nav-link,
+    .btn-link {
+      display: block;
+    }
+    .notice-header{
+      font-size: 1.5em;
+    }
+    .img-container{
+      margin-top: 5%;
+    }
+    
+    
+  }
